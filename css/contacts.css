@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+
+  font-family: "Geometria";
+}
+
+/* nav */
+
+li,
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 40px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  color: black;
+}
+
+.nav__links li a:hover {
+  color: blue;
+}
+
+header img {
+  height: 20%;
+  width: 20%;
+}
+
+header nav ul li button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* подводка к ссылке */
+
+.nav__links li a {
+  display: inline-block;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.nav__links li a:after {
+  background-color: blue;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav__links li a:hover:after,
+.nav__links li a:focus:after {
+  width: 100%;
+}
+
+/* main contact */
+
+.main__contact {
+  margin-top: 40px;
+}
+
+.main__contact p {
+  line-height: 145%;
+  margin-bottom: 10px;
+}
+
+img {
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
